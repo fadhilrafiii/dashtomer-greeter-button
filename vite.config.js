@@ -9,6 +9,8 @@ export default defineConfig({
     environment: 'jsdom',
   },
   build: {
+    outDir: 'example',
+    emptyOutDir: false,
     lib: {
       entry: resolve(__dirname, 'src/main.js'),
       name: 'Greeter',
