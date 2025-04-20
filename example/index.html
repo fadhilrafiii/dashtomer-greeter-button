@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/greeter.css" />
+    <title>Greeter Button Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
+  </head>
+  <body>
+    <div id="greeter-btn" />
+    <script src="../dist/greeter-component.js"></script>
+    <script>
+      window.Greeter.init("#greeter-btn", {
+        message: "Hi this is an example usage of Greeter Button",
+        'aria-label': 'button',
+        'style': 'font-size:24px;' 
+      });
+    </script>
+  </body>
+</html>
